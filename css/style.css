@@ -1,0 +1,183 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+}
+
+#body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/sololight.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    scrollbar-width: 0;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+} 
+
+@font-face {
+    font-family: GreatVibes;
+    src: url("../assets/fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Vonique64;
+    src: url("../assets/fonts/Vonique\ 64.ttf") format("truetype");
+}
+
+@keyframes parallax {
+    to {
+        translate: 0 calc(var(--parallax-speed) * 50px);
+    }
+}
+
+#title {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.stamp {
+    width: fit-content;
+    height: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .4em;
+    padding-bottom: .2em;
+
+    background-color: black;
+    border-color: rgb(255, 255, 255);
+    border-width: .1em;
+    border-style: solid;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+    text-align: center;
+    font-family: GreatVibes;
+    font-size: 6vh;
+    color: white;
+}
+
+.container {
+    /* I should calculate this maybe???? */
+    height: 500vh;
+    /* border: 10px solid red; */
+
+}
+
+.card {
+    width: 100vw;
+    /* height: 100vh; */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+    font-family: Vonique64;
+    font-size: 6vh;
+    color: white;
+}
+
+#white {
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+
+    box-shadow: 0 -2px 5px black;
+
+    --parallax-speed: 7;
+    animation: parallax linear;
+    animation-timeline: scroll();
+}
+
+#grey {
+    height: 5vh;
+    background-color: rgb(128, 128, 128);
+    /* translate: 0 -95vh; */
+    /* top: 95vh; */
+
+    box-shadow: 0 -2px 5px black;
+
+    --parallax-speed: 3.5;
+    animation: parallax linear;
+    animation-timeline: scroll();
+}
+
+#black {
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+
+    /* translate: 0 -190vh; */
+    /* top: 190vh; */
+
+    box-shadow: 0 -2px 5px black;
+}
+
+.entry {
+    /* height: 100vh; */
+    font-size: 9vh;
+    /* translate: 0 -195vh; */
+    user-select: none;
+}
+
+/* #name {
+    height: 100vh;
+    height: calc(100vh - (9vh * 5));
+} */
+
+#techenthusiast {
+    /* top: calc(9vh + 195vh); */
+    height: calc(100vh - (9vh * 4));
+    /* translate: 0 9vh; */
+}
+
+#traveler {
+    /* top: calc(9vh * 2 + 195vh); */
+    height: calc(100vh - (9vh * 4));
+    translate: 0 calc(9vh * 1);
+}
+
+#foodie {
+    /* top: calc(9vh * 3 + 195vh); */
+    height: calc(100vh - (9vh * 4));
+    translate: 0 calc(9vh * 2);
+}
+
+#coddingdabbler {
+    /* top: calc(9vh * 4 + 195vh); */
+    height: calc(100vh - (9vh * 4));
+    translate: 0 calc(9vh * 3);
+}
+
+#socialmedia {
+    /* top: calc(9vh * 5 + 195vh); */
+    /* height: calc(100vh - (9vh * 5)); */
+    height: calc(100vh - (9vh * 4));
+    translate: 0 calc(9vh * 4);
+}
+
+a:hover {
+    text-shadow: 0 0 5px white;
+}
+
+#socials {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0vh;
+    left: 100vw;
+}
