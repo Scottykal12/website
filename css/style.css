@@ -181,3 +181,7 @@ a:hover {
     top: 0vh;
     left: 100vw;
 }
+
+.fa-house {
+    transform: scale(90%);
+}
