@@ -55,12 +55,15 @@ a {
 @keyframes fadein2 {
     0% {
         opacity: 0%;
+        visibility: hidden;
     }
     90% {
         opacity: 0%;
+        visibility: hidden;
     }
     100% {
         opacity: 100%;
+        visibility: visible;
     }
 }
 
@@ -98,6 +101,8 @@ a {
     font-family: GreatVibes;
     font-size: 6vh;
     color: white;
+
+    user-select: none;
 }
 
 .container {
