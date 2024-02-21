@@ -23,7 +23,7 @@ a {
     scrollbar-width: 0;
 }
 
-*::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 } 
 
@@ -43,11 +43,37 @@ a {
     }
 }
 
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadein2 {
+    0% {
+        opacity: 0%;
+    }
+    90% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
 #title {
     width: 100vw;
     height: 100vh;
     display: flex;
     position: relative;
+}
+
+#titlename {
+    animation: fadein 5s;
+
 }
 
 .stamp {
@@ -175,11 +201,19 @@ a:hover {
 }
 
 #socials {
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
-    position: absolute;
+    /* position: absolute;
     top: 0vh;
-    left: 100vw;
+    left: 100vw; */
+}
+
+.socials {
+    position: fixed;
+    top: 50vh;
+
+    animation: fadein2 linear;
+    animation-timeline: scroll();
 }
 
 .fa-house {
