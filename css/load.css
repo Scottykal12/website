@@ -1,0 +1,51 @@
+#loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 1000;
+}
+
+#loading > * {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    z-index: 1001;
+    border-radius: 50%;
+    bottom: 40px;
+}
+
+@keyframes blink1 {
+    0% { scale: 0%; }
+    33% { scale: 100%; }
+    66% { scale: 100%; } 
+}
+
+@keyframes blink2 {
+    0% { scale: 100%; }
+    33% { scale: 0%; }
+    66% { scale: 100%; }   
+}
+
+@keyframes blink3 {
+    0% { scale: 100%; }
+    33% { scale: 100%; }
+    66% { scale: 0%; }
+    
+}
+
+.dot1 {
+    right: 200px;
+    animation: blink1 2s linear infinite;
+}
+
+.dot2 {
+    right: 120px;
+    animation: blink2 2s linear infinite;
+}
+
+.dot3 {
+    right: 40px;
+    animation: blink3 2s linear infinite;
+}
