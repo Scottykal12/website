@@ -92,6 +92,7 @@ a {
     border-color: rgb(255, 255, 255);
     border-width: .1em;
     border-style: solid;
+    box-shadow: 0 25px 20px -20px black;
 
     position: relative;
     top: 50%;
@@ -119,6 +120,7 @@ a {
     font-family: Vonique64;
     font-size: 6vh;
     color: white;
+    text-shadow: 0 15px 10px black;
 }
 
 .entry {
